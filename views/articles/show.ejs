@@ -9,10 +9,15 @@
 </head>
 <body>
   <div class="container">
-    <h1 class="mb-4">New Article</h1>
-     <form action="/articles" method="POST">
-      <%- include('_form_fields') %> 
-     </form>
+    <h1 class="mb-4"><%= article.title %> </h1>
+    <div class="text-muted mb-2">
+      <%= article.createdAt.toLocaleDateString() %> 
+    </div>
+    <a href="/" class="btn btn-secondary">All articles</a>
+    <a href="/articles/edit/<%= article.id %>" class="btn btn-info">Edit</a>
+    <div class="card-body">
+      <%= article.content %> 
+    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
