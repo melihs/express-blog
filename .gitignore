@@ -1,0 +1,15 @@
+### ExpressionEngine ###
+.DS_Store
+
+
+# For security do not publish the following files
+system/expressionengine/config/database.php
+system/expressionengine/config/config.php
+
+# Caches
+sized/
+thumbs/
+_thumbs/
+*/expressionengine/cache/*
+
+node_modules/*
