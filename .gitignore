@@ -1,6 +1,6 @@
 ### ExpressionEngine ###
 .DS_Store
-
+.idea/
 
 # For security do not publish the following files
 system/expressionengine/config/database.php
